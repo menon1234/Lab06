@@ -1,0 +1,16 @@
+Package: Lab06
+Type: Package
+Title: This package gives the different ways to solve the knapsack problem
+Version: 0.1.0
+Author: Fengjuanchen and Sreenand.S
+Maintainer: Sreenand.S <nandu.neo@gmail.com> Fengjuan Chen <fengjuanchen5@gmail.com>
+Description: The different appraoches implemented here are greedy,bruteforce and dynamic approach.Dynamic appraoch is also solved it recursive and using RCPP method.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr

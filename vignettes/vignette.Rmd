@@ -1,0 +1,54 @@
+---
+title: "Knapsack Problem"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Lab06)
+```
+# Description
+This Package gives several solutions to solving the knapsack problem.The knapsack problem or rucksack problem is a problem in combinatorial optimization: Given a set of items, each with a weight and a value, determine the number of each item to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible. 
+Some of which are Greedy approach, Dynamic approach and the brute force algorithm.
+
+-----
+
+## Brute Force algorithm
+Brute Force Algorithms refers to a programming style that does not include any shortcuts to improve performance, but instead relies on sheer computing power to try all possibilities until the solution to a problem is found.Here we have implemented this algorithm to solve the knapsack problem.
+
+### Example
+
+```r
+brute_force_knapsack(x = knapsack_objects[1:8,], W = 3500)
+```
+
+----
+
+## Dynamic algorithm
+Dynamic Programming is mainly an optimization over plain recursion. Wherever we see a recursive solution that has repeated calls for same inputs, we can optimize it using Dynamic Programming.
+
+### Example
+
+```r
+knapsack_dynamic (x = knapsack_objects[1:8,], W = 2000)
+```
+----
+
+## Greedy algorithm
+A greedy algorithm is any algorithm that follows the problem-solving heuristic of making the locally optimal choice at each stage with the intent of finding a global optimum.
+
+### Example
+```r
+greedy_knapsack(x = knapsack_objects[1:800,], W = 3500)
+```
+----
