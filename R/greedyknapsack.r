@@ -30,8 +30,6 @@ knapsack_objects <- data.frame(
 #' }
 #' @export
 #'
-#' @examples
-#' greedy_knapsack(x = knapsack_objects[1:800,], W = 3500)
 greedy_knapsack <- function(x,W){
   stopifnot(is.data.frame(x))
   stopifnot(W>0)

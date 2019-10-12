@@ -21,10 +21,3 @@ A list giving total no of objects and the maximum weight it can hold
 \description{
 Knapsack Problem using the greedy approach
 }
-\examples{
-greedy_knapsack(x = knapsack_objects[1:800,], W = 3500)
-order data decrasely by value(i)/weight(i)
-Problem: value(i)/weight(i) is equal but value(i) is not equal
-should order decreasely by value(i) too.
-print(new_data)
-}

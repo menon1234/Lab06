@@ -30,13 +30,10 @@ knapsack_objects <- data.frame(
 #' }
 #' @export
 #'
-#' @examples
-#'
-#'brute_force_knapsack(x = knapsack_objects[1:8,], W = 3500)
 #'
 
 brute_force_knapsack <- function(x,W,parallel=FALSE){
-  stopifnot(is.data.frame(x))
+ stopifnot(is.data.frame(x))
   stopifnot(W>0)
   n <- nrow(x)
 

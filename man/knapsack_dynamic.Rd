@@ -21,9 +21,3 @@ A list giving total no of objects and the maximum weight it can hold
 \description{
 Knapsack problem using the dynamic approach
 }
-\examples{
-\\donotrun{
-
-knapsack_dynamic (x = knapsack_objects[1:8,], W = 2000)
-}
-}

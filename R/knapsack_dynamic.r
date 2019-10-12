@@ -29,11 +29,6 @@ knapsack_objects <- data.frame(
 #' }
 #' @export
 #'
-#' @examples
-#' \donotrun{
-#'
-#' knapsack_dynamic (x = knapsack_objects[1:8,], W = 2000)
-#' }
 knapsack_dynamic <- function(x,W){
   stopifnot(is.data.frame(x))
   stopifnot(W>0)

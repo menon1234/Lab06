@@ -2,25 +2,12 @@
 % Please edit documentation in R/knapsackdynamicrcpp.r
 \name{knapsack_dynamicrcpp}
 \alias{knapsack_dynamicrcpp}
-\title{Knapsack Problem using the dynamic approach using Rcpp}
+\title{Knapsack Problem using the dynamic approach using Rcpp
+knapsack_dynamicrcpp(x = knapsack_objects[1:8,], W = 2000)}
 \usage{
 knapsack_dynamicrcpp(x, W)
 }
-\arguments{
-\item{x}{value}
-
-\item{W}{weight}
-}
-\value{
-A list giving total no of objects and the maximum weight it can hold
-\itemize{
-\item x -knapsack_objects
-\item W - total weight it can hold
-}
-}
 \description{
 Knapsack Problem using the dynamic approach using Rcpp
-}
-\examples{
 knapsack_dynamicrcpp(x = knapsack_objects[1:8,], W = 2000)
 }

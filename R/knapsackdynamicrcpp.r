@@ -22,18 +22,7 @@ nw <- matrix(nrow = 2, ncol = 2)  # do not know how to change the elements of  m
 #  by nw <<- matrix(nro=n+1,ncol = max_weight+1)
 #'
 #' Knapsack Problem using the dynamic approach using Rcpp
-#'
-#' @param x value
-#' @param W weight
-#'
-#' @return A list giving total no of objects and the maximum weight it can hold
-#' \itemize{
-#' \item x -knapsack_objects
-#' \item W - total weight it can hold
-#' }
-#' @export
-#'
-#' @examples
+
 #' knapsack_dynamicrcpp(x = knapsack_objects[1:8,], W = 2000)
 knapsack_dynamicrcpp <- function(x,W){
   n <- nrow(x)

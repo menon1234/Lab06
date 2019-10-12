@@ -23,8 +23,3 @@ A list giving total no of objects and the maximum weight it can hold
 \description{
 Knapsack problem using the bruteforce approach
 }
-\examples{
-
-brute_force_knapsack(x = knapsack_objects[1:8,], W = 3500)
-
-}
