@@ -21,3 +21,4 @@ kd<-microbenchmark(kd<-knapsack_dynamic(x = knapsack_objects[1:800,], W = 3500))
 #bruteforce
 source("C:/Users/nandu/Documents/Lab06/R/bruteforce.r")
 profvis::profvis(kd<-knapsack_dynamic(x = knapsack_objects[1:800,], W = 3500))
+bf<-microbenchmark(kd<-knapsack_dynamic(x = knapsack_objects[1:800,], W = 3500))
