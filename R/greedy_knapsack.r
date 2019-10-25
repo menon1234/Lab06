@@ -1,25 +1,5 @@
-suppressWarnings(RNGversion("3.5.9"))
-set.seed(42)
-n <- 2000
-knapsack_objects <- data.frame(
-   w=sample(1:4000, size = n, replace = TRUE),
-   v=runif(n = n, 0, 10000)
- # w=c(1,2,5,6,7,9) ,
- # v=c(1,6,18,22,28,36)
-)
-# x,y,z for test
-#x <- knapsack_objects[1:4,]
-#y <- knapsack_objects[1:8,]
-#z <- knapsack_objects[1:12,]
-
-# caluculate all the vaules of value(i)/weight(i) of each item
-# order the data by value(i)/weight(i) decreasely
-# put as many items as possible in the knapsack if the weight(i) still is less than the remainder
-# the remainder = max_weight - weight(i)
-
-
 #' Knapsack Problem using the greedy approach
-#'
+#' @title greedy_knapsack
 #' @param x value
 #' @param W weight
 #'
@@ -28,9 +8,11 @@ knapsack_objects <- data.frame(
 #' \item x -knapsack_objects
 #' \item W - total weight it can hold
 #' }
+#'
 #' @export
 #'
-greedy_knapsack <- function(x,W){
+#' @references 'https://en.wikipedia.org/wiki/Knapsack_problem'
+greedy_knapsack = function(x,W){
   stopifnot(is.data.frame(x))
   stopifnot(W>0)
   max_weight <- W
