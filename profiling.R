@@ -15,10 +15,10 @@ gk<- microbenchmark (greedy_knapsack(x = knapsack_objects[1:800,], W = 3500), ti
 #dynamic
 source("C:/Users/nandu/Documents/Lab06/R/knapsack_dynamic.r")
 profvis::profvis(kd<-knapsack_dynamic(x = knapsack_objects[1:800,], W = 3500))
-kd<-microbenchmark(kd<-knapsack_dynamic(x = knapsack_objects[1:800,], W = 3500))
+kd<-microbenchmark(kd<-knapsack_dynamic(x = knapsack_objects[1:800,], W = 3500), times = 5)
 
 
 #bruteforce
 source("C:/Users/nandu/Documents/Lab06/R/bruteforce.r")
 profvis::profvis(kd<-knapsack_dynamic(x = knapsack_objects[1:800,], W = 3500))
-bf<-microbenchmark(kd<-knapsack_dynamic(x = knapsack_objects[1:800,], W = 3500))
+bf<-microbenchmark(kd<-knapsack_dynamic(x = knapsack_objects[1:800,], W = 3500), times = 5 )

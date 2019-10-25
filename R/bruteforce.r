@@ -1,16 +1,4 @@
-suppressWarnings(RNGversion("3.5.9"))
-set.seed(42)
-n <- 2000
-knapsack_objects <- data.frame(
-  w=sample(1:4000,size=n, replace = TRUE),
-  v=runif(n=n, 0, 10000)
- # w=c(1,2,5,6,7,9) ,      #  small dataset for test
- # v=c(1,6,18,22,28,36)
-)
-# x,y,z for test
-#x <- knapsack_objects[1:4,]
-#y <- knapsack_objects[1:8,]
-#z <- knapsack_objects[1:12,]
+
 # enumerate all different combinations using a binary representation of 1 to 2^n
 # put all different combinations  in a matrix "combination"
 # store all value=1 in each line of  the matrix to vector a by command which()
@@ -79,4 +67,3 @@ brute_force_knapsack <- function(x,W,parallel=FALSE){
     return(result)
 
 }
-

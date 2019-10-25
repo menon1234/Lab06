@@ -1,18 +1,7 @@
 
 #  dynamic programming method for 0-1 knapsack problem without recursive functions
 
-suppressWarnings(RNGversion("3.5.9"))
-set.seed(42)
-n <- 2000
-knapsack_objects <- data.frame(
-  w=sample(1:4000, size = n, replace = TRUE),
-  v=runif(n = n, 0, 10000)
-  # w=c(1,2,5,6,7,9) ,
-  # v=c(1,6,18,22,28,36)
-)
-#x <- knapsack_objects[1:4,]
-#y <- knapsack_objects[1:8,]
-#z <- knapsack_objects[1:12,]
+
 
 # caluculate all the vaules of knapscak(n, W) of each situation
 #   and store these value in a matrix nw
